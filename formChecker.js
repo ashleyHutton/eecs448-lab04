@@ -1,16 +1,18 @@
 function checkForm() {
 
-	alert("here's my function!");
-
-	var shopping = document.getElementById("shopping").value;
-
 	var email= document.getElementById("email").value;
 	var password = document.getElementById("password").value;
 
 
-	if((password == null || password == "") || (password == null || email == "") {
+	if((password == null || password == "") || (email == null || email == "")) {
+		if (email == ""){
+			alert("Email can't be blank");
+		}
 
-		alert("Blank field is not allowed!");
+		if (password == ""){
+			alert("Password can't be blank");
+		}
+
 		return false;
 	}
 	return true;

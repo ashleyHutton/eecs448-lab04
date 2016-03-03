@@ -4,15 +4,13 @@
 		<title>One Stop Shop</title>
 		<?php include 'customerBackend.php';?>
 		<link rel="stylesheet" href="style.css" type="text/css">
-
+		<script src = "formChecker.js"></script>
 
 	</head>
 
 	<body>
 
-		<script type = "text/javascript" src = "/formChecker.js"></script>
-
-		<form onsubmit="return checkForm()" action ="customerBackend.php" method = "post">
+		<form onsubmit="return checkForm();" action ="customerBackend.php" method = "post">
 
 			<h2>One Stop Shop</h2>
 
@@ -40,7 +38,7 @@
 			</div>
 			</br>
 			<input type = "button" onClick = "history.go(0)" value = "Reset">
-			<input type = "submit" onSubmit = " return checkForm()" name = "submit">
+			<input type = "submit" name = "submit" value="Submit">
 		
 		</form>
 	</body>
