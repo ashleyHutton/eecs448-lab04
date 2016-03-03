@@ -1,0 +1,47 @@
+<html>
+
+	<head>
+		<title>One Stop Shop</title>
+		<?php include 'customerBackend.php';?>
+		<link rel="stylesheet" href="style.css" type="text/css">
+
+
+	</head>
+
+	<body>
+
+		<script type = "text/javascript" src = "/formChecker.js"></script>
+
+		<form onsubmit="return checkForm()" action ="customerBackend.php" method = "post">
+
+			<h2>One Stop Shop</h2>
+
+			<div class="background1">
+				Login:</br>
+				<input type="email" id="email" name="email"></br>
+				<input type="password" id="password" name="password"></br></br>
+			</div>
+
+			<div class="background2">
+				Cat $1,000.00
+				<input type="number" min="0" value="0" name="cat"></br>
+				Dog $1.00
+				<input type="number" min="0" value="0" name="dog"></br>
+				Fish $280.00		
+				<input type="number" min="0" value="0" name="fish"></br></br>
+			</div>
+
+			<div class="background3">
+				Shipping Method:</br>
+				<input type="radio" name="shipping" value="Free 7 Day" checked=true>Free 7 Day</br>
+				<input type="radio" name="shipping" value="$50.00 Overnight">$50.00 Overnight</br>
+				<input type="radio" name="shipping" value="$5.00 Three Day">$5.00 Three Day
+</br>
+			</div>
+			</br>
+			<input type = "button" onClick = "history.go(0)" value = "Reset">
+			<input type = "submit" onSubmit = " return checkForm()" name = "submit">
+		
+		</form>
+	</body>
+</html>
